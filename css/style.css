@@ -1,0 +1,305 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	 height: 100vh;
+  align-items: center;
+  background:linear-gradient(to top left, #bfc6e8, #274dc7);
+		/* background-color: aquamarine; */
+}
+
+main{
+		margin:0 100px ;
+	 margin-top: 60px;
+	 background-color: whitesmoke;
+}
+.header{
+ height: 80px;
+	 display: flex;
+		justify-content: space-between;
+		background-color: white;
+		padding: 20px 30px;
+
+}
+.header img {
+	 height: 100%;
+}
+.header h1{
+	color: #20a1c9;
+	text-transform: capitalize;
+}
+
+/* end of header style */
+
+.box1{
+ display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+
+	width: 100%;
+	padding: 80px 120px;
+}
+
+.box1 .profile{
+		width: 50%;
+		border: 2px solid #20a1c9;
+			}
+		
+.box1 .profile img{
+	height: 100%;
+	width: 100%;
+}
+.box1 .my_info{
+		text-align: center;
+			width: 50%;
+}
+.box1 .my_info h1{
+	margin-top: 80px;
+	font-size: 80px;
+	color: rgb(26, 125, 218);
+}
+.box1 .my_info h3{
+	font-size: 20px;
+		color: rgb(26, 125, 218);
+		text-transform: capitalize;
+}
+.box1 .my_info .tools h2{
+	margin-top: 2px;
+	text-transform: capitalize;
+	display: inline-block;
+	font-size: 20px;
+	background-color:	rgb(26, 125, 218);
+	color: whitesmoke;
+	padding: 5px 15px;
+}
+
+
+/*  end of profille */
+
+
+.box2{
+	display:flex ;
+	flex-direction: row;
+	background-color: rgb(51, 150, 243);
+}
+.box2 .about{
+	 padding: 40px 200px;
+		width: 100%;
+		text-align: center;
+}
+.box2 .about h1{
+	text-transform: capitalize;	 
+	color: white;
+	margin-bottom: 20px;
+}
+.box2 .about p{
+	 color: rgb(255, 255, 255);
+		white-space: 2;
+		font-size: 20px;
+}
+/*  end of more about me */
+
+.our_team{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	padding: 30px 0;
+}
+.our_team .about_team{
+ width: 55%;
+	text-align: center;
+	padding-top: 70px;
+}
+.our_team .about_team h1{
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+		padding: 13px 0;
+		text-transform: capitalize;
+		color: #20a1c9;
+}
+.our_team .about_team p{
+		 padding-bottom: 30px;
+		font-size: 21px;
+}
+.our_team .join_team {
+  width: 45%;
+		text-align: center;
+		padding: 0 40px;
+}
+ .our_team .join_team h3{
+		text-transform: capitalize;
+		margin: 20px 0;
+		color: #20a1c9;
+		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	}
+
+.our_team .join_team input{
+display: block;
+width: 100%;
+padding: 0 20px;
+font-size: 18px;
+line-height: 50px;
+background-color: white;
+border: 1px solid rgb(38, 143, 192);
+border-radius: 5px;
+border-bottom-width: 3px;
+outline: none;
+}
+
+.our_team .join_team input:not(:first-child){
+	margin-top: 10px;
+}
+
+
+.our_team .join_team button{
+	display: block;
+width: 100%;
+padding: 0 20px;
+font-size: 28px;
+line-height: 50px;
+background-color: rgb(24, 164, 214);
+border: 1px solid rgb(2, 77, 111);
+border-radius: 5px;
+border-bottom-width: 3px;
+outline: none;
+margin-top: 20px;
+color: white;
+}
+
+.footer{
+	
+	display: flex;
+	height: 60px;
+	background-color:rgb(6, 126, 170);
+	width: 100%;
+		margin-bottom :30px; ;
+		justify-content: center;
+			padding: 10px 0;
+}
+.footer a img{
+	height: 40px;
+	margin-left: 30px;
+	border-radius: 100%;
+}
+
+@media only screen  and (max-width: 567px){
+	main{
+ 	margin:0 ;
+	}
+.header {
+	justify-content: flex-start;
+}
+.header h1{
+	padding: 15px 2px;
+	font-size: 20px;
+}
+.box1{
+	padding:20px 40px;
+}
+.box1 .profile{
+	width: 100%;
+}
+.box1 .my_info{
+	width: 100%;
+}
+.box1 .my_info h1{
+	font-size: 38px;
+	margin-top: 20px;
+}
+
+.box2 .about{
+	 padding: 20px 20px;
+		width: 100%;
+		text-align: center;
+}
+.box2 .about h1{
+
+	margin-bottom: 10px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 25px;
+}
+.box2 .about p{
+		font-size: 14px;
+			font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.our_team{
+	padding-top: 14px;
+}
+.our_team .about_team{
+ width: 100%;
+	padding-top: 0;
+}
+.our_team .about_team h1{
+font-size: 20px;
+}
+.our_team .about_team p{
+		 padding:0 20px;
+		font-size: 16px;
+
+}
+.our_team .join_team {
+  width: 100%;
+		padding: 0 40px;
+}
+ .our_team .join_team h3{
+		text-transform: capitalize;
+		margin: 20px 0;
+		color: #20a1c9;
+		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	}
+}
+@media only screen and (min-width: 567px) and (max-width: 1022px) {
+	main{
+ 		margin:0 ;
+	 margin-top:0;
+}
+.box1{
+	width: 100%;
+	padding: 40px 30px;
+}
+.box1 .profile{
+		width: 40%;
+	}
+.box1 .profile img{
+	height: 100%;
+}
+.box1 .my_info{
+	margin-left: 30px;
+}
+.box1 .my_info h1{
+	font-size: 60px;
+}
+.box2 .about{
+	 padding: 30px 50px;
+}
+.box2 .about h1{
+	text-decoration: underline;
+	margin-bottom: 10px;
+}
+.box2 .about p{
+ font-size: 16px;
+}
+.our_team{
+	padding: 20px 25px;
+}
+.our_team .about_team{
+	width: 100%;
+	padding-top: 0;
+}
+.our_team .about_team p{
+ font-size: 17px ;
+	}
+	.our_team .join_team {
+  width: 100%;
+		text-align: center;
+		padding: 0 40px;
+}
+.our_team .join_team button{
+	 margin: 30px 0;
+		display: inline-block;
+		width: 200px;
+}
+}
