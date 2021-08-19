@@ -123,6 +123,8 @@ main{
 .our_team .about_team p{
 		 padding-bottom: 30px;
 		font-size: 21px;
+		margin-right: -35px;
+		align-items: center;
 }
 .our_team .join_team {
   width: 45%;
